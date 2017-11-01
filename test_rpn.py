@@ -23,7 +23,4 @@ class TestBasics(unittest.TestCase):
         self.assertEqual(1, result)
     def test_exp_neg(self):
         result = rpn.calculate("2 -2 ^")
-        self.assertEqual(-0.25, result)
-    def test_exp_frac(self):
-        result = rpn.calculate("9 0.5 ^")
-        self.assertEqual(3, result)
+        self.assertEqual(0.25, result)
